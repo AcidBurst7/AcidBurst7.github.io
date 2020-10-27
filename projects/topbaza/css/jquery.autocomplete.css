@@ -1,0 +1,56 @@
+.ac_results {
+	padding: 0px;
+	width: 515px !important;
+	border: 1px solid #bbb;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 515px !important;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 15px 45px;
+	cursor: default;
+	display: block;
+	border-bottom: 1px solid #bbb;
+	/* 
+	если ширина будет иметь значение 100%, то будет появляться полоска 
+	горизонтальной прокрутки
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	ВАЖНО! Если если высота строки не установлена или используются 
+	относительные единицы, то прокрутка будет ломаться в Firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac-results li:last-child(){
+	border-bottom: none;
+}
+
+.ac-results li:hover,.ac_odd:hover, .ac_even:hover{
+	background-color: #7390c5;
+	color:#fff;
+}
+
+
+.ac_odd {
+	background-color: #fff;
+}
+
+.ac_over {
+	background-color: #fff;
+	color: #000;
+}

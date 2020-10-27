@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Sky Alliance</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="skyalliance">
+
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.pack.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="form-work.js"></script>
+
+   <link rel="stylesheet" href="css/flora.datepicker.css">
+   <script src="js/ui.datepicker.js"></script>
+  <script src="js/ui.datepicker-ru.js"></script>
+
+
+  <script>
+  $(function() {
+    $( "#datepicker1" ).datepicker();
+    $( "#datepicker2" ).datepicker();
+    $( "#datepicker3" ).datepicker();
+    $( "#datepicker4" ).datepicker();
+
+  });
+  </script>
+
+  <script type="text/javascript">
+      /*$(document).ready(function(){
+		$("#country").blur(function(){
+			$.post("town_availability.php",{ user_name:$(this).val() } ,function(data){
+				if(data=='no'){ 
+				 		$("input[name=town-from]").addClass('formError');
+					} else {
+					 	$("input[name=town-from]").removeClass('formError');		
+					 	$("DIV#add-choose-plane").css('display','block');
+					}
+				});
+			});
+*/
+
+		/*$("#country2").blur(function(){
+			$.post("town_availability.php",{ user_name2:$(this).val() } ,function(data){
+				if(data=='no'){ 
+				 		$("input[name=town-from]").addClass('formError');
+					} else {
+					 	$("input[name=town-from]").removeClass('formError');
+				 		$("input[name=town-to]").removeClass('formError');
+				 		$("DIV#add-choose-plane").css('display','block');
+					}
+				});
+			});*/
+		//});
+</script>
+<!--[if lte IE 9]>
+	<script type="text/javascript">
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+	<!--[if IE]>
+
+	<style type="text/css">
+		@media  all and (max-width: 480px) {
+			#logo img {
+				width: 150px;
+			}
+		}
+	</style>
+<![endif]-->
+
+</head>
+<body class="red" data-spy="scroll" data-target="#main_menu" data-offset="60" cz-shortcut-listen="true">
+	<div id="preloader" class="clearfix" style="display: none;">
+		<div class="wrapper align-center" style="opacity: 0;">
+			<div class="logo">
+				<img src="img/logo2.png" alt="">
+			</div>
+			<div id="qLbar" class="bar" style="height: 1px; width: 100%;"></div>
+			<div id="qLpercentage" class="percents">100%</div>
+		</div>
+
+		<div class="half left" style="width: 0px;"></div>
+		<div class="half right" style="width: 0px;"></div>
+	</div>
+	<!-- // END PRELOADER // -->
+
+	<!-- // MAIN MENU -->
+	<nav id="main_menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-collapse">
+					<span class="">Меню</span>
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand visible-xs-block" href="index.html">Sky Alliance</a>
+			</div>
+		
+			<div class="navbar-collapse collapse" id="main-menu-collapse" style="height: 1px;">
+				<ul id="main-menu" class="nav navbar-nav scrollmenu">
+					<li><a href="#order" data-target="#order">Заказ самолета</a></li>
+					<li><a href="#about" data-target="#about">О компании</a></li>
+					<li><a href="#team" data-target="#team">Услуги</a></li>
+					<li><a href="#partners" data-target="#partners">Партнёры</a></li>
+					<li><a href="#contact" data-target="#contact">Контакты</a></li>
+				</ul>
+				<!--div class="navbar-in-right">
+					<a href="#"><div class="icon icon-tel"></div>+7 (925) 092-24-28</a>
+					<a href="#"><div class="icon icon-mail"></div>zakaz@skyalliance.ru</a>
+				</div-->
+				<div class="contacts">
+            		<img src="img/phone.png" class="img-first">+7 (925) 092-24-28
+            		<img src="img/mail.png">zakaz@skyalliance.ru
+        		</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav><!-- // END MAIN MENU -->
+
+	<!-- // MAIN SECTION // -->
+	<section id="home" class="page fullscreen container-fluid" style="opacity: 1; transform: scale(1, 1);">
+	<div class="slider">
+		<style type="text/css">
+			body .slider{
+				background-image: url(img/back0.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				background-color: #464646;
+			}
+		</style>
+	</div>
+	<!-- // END SLIDER // -->
+
+
+	<!-- // CONTENT // -->
+	<div class="content pattern color-layout" data-color="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.6);">
+		<div class="wrapper align-center"><!-- // LOGO // -->
+			<div id="logo">
+				<img src="img/lll.png" width="685px" height="auto" style="margin-top:90px;">
+			</div><!-- // END LOGO // -->
+		</div>
+
+		<div class="to-order">
+			<a href="#order" data-target="#order" class="btn big no-color">
+				Заказать самолет <br>
+				&#9660;
+			</a>
+		</div>
+	</div><!-- // END CONTENT // -->
+	</section><!-- // END MAIN SECTION // -->
+	
+	<!-- // CONTENT // -->
+	<section id="content">
+		<!-- // ORDER BLOCK // -->
+		<section id="order" class="page container-fluid">
+			<header>
+				<h1>Заказ самолета</h1>
+				<hr>
+			</header>
+		
+		
+
+		<div class="body">
+		<form name="rf" method="post" action="gogogo.php" id="ajaxform" accept-charset="UTF-8">
+			<div class="col-md-12 col-1 clearfix">
+				<div class="step-1" id="step-1">
+					<div class="col-md-6 input-city-in clearfix" id="input-city-in">
+							<div class="select-plane" id="select-plane">
+								<span class="ico-plane"></span>
+								<input name="town-from" class="country-1" id="country" type="text" placeholder="Выберите город вылета"  autocomplete="off">
+								<span id="msgbox" style="display:none"></span>
+							</div>
+
+							<div class="select-date-time clearfix">
+								<div class="select-date">
+									<span class="ico-calendar"></span>
+									<input name="datepicker1" placeholder="Дата" autocomplete="off" type="text" id="datepicker1">
+								</div>
+									
+								<div class="select-time clearfix">
+									<span class="ico-time"></span>
+									<select name="time" id="time">
+										<option value="" selected="selected">Время</option>
+										<option value="00:00">00:00</option>
+										<option value="00:30">00:30</option>
+										<option value="01:00">01:00</option>
+										<option value="01:30">01:30</option>
+										<option value="02:00">02:00</option>
+										<option value="02:30">02:30</option>
+										<option value="03:00">03:00</option>
+										<option value="03:30">03:30</option>
+										<option value="04:00">04:00</option>
+										<option value="04:30">04:30</option>
+										<option value="05:00">05:00</option>
+										<option value="05:30">05:30</option>
+										<option value="06:00">06:00</option>
+										<option value="06:30">06:30</option>
+										<option value="07:00">07:00</option>
+										<option value="07:30">07:30</option>
+										<option value="08:00">08:00</option>
+										<option value="08:30">08:30</option>
+										<option value="09:00">09:00</option>
+										<option value="09:30">09:30</option>
+										<option value="10:00">10:00</option>
+										<option value="10:30">10:30</option>
+										<option value="11:00">11:00</option>
+										<option value="11:30">11:30</option>
+										<option value="12:00">12:00</option>
+										<option value="12:30">12:30</option>
+										<option value="13:00">13:00</option>
+										<option value="13:30">13:30</option>
+										<option value="14:00">14:00</option>
+										<option value="14:30">14:30</option>
+										<option value="15:00">15:00</option>
+										<option value="15:30">15:30</option>
+										<option value="16:00">16:00</option>
+										<option value="16:30">16:30</option>
+										<option value="17:00">17:00</option>
+										<option value="17:30">17:30</option>
+										<option value="18:00">18:00</option>
+										<option value="18:30">18:30</option>
+										<option value="19:00">19:00</option>
+										<option value="19:30">19:30</option>
+										<option value="20:00">20:00</option>
+										<option value="20:30">20:30</option>
+										<option value="21:00">21:00</option>
+										<option value="21:30">21:30</option>
+										<option value="22:00">22:00</option>
+										<option value="22:30">22:30</option>
+										<option value="23:00">23:00</option>
+										<option value="23:30">23:30</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+					<div class="col-md-6 input-city-in clearfix">
+						<div class="select-plane">
+							<span class="ico-plane"></span>
+							<input name="town-to" id="country2" type="text" placeholder="Выберите город прилета"  autocomplete="off">
+						</div>
+						
+						<div class="select-dep-pass clearfix">
+							<div class="select-dep">
+								<p><input type="radio" id="radio1" name="rad1" value="Вылет" checked/><label for="radio1">Вылет</label></p>
+	    						<p><input type="radio" id="radio2" name="rad1" value="Прилет"/><label for="radio2">Прилет</label></p>
+							</div>
+								
+							<div class="select-pass">
+								<span class="ico-pass"></span>
+								<select id="passengers" name="passengers">
+									<option value="" selected="selected">Пассажиры</option>
+									<option value="1">1</option>
+									<option value="2">2</option>	
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="Свыше 25">Свыше 25</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="plus-form" style="display:none">
+					<div id="deletePlane" class="delete-plane"><span>Удалить перелет</span></div><br>
+					<div class="input-city-in col-md-6 clearfix" id="input-city-in-2">
+						<div class="select-plane-2" id="select-plane-2">
+							<span class="ico-plane"></span>
+							<input name="town-from-2" id="country11" type="text" autocomplete="off">
+						</div>
+
+						<div class="select-date-time-2 clearfix">
+							<div class="select-date-2">
+								<span class="ico-calendar"></span>
+								<input name="datepicker2" placeholder="Дата" autocomplete="off" type="text" id="datepicker2">
+							</div>
+									
+							<div class="select-time-2 clearfix">
+								<span class="ico-time"></span>
+								<select name="time-2" id="time-2">
+									<option value="" selected="selected">Время</option>
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 input-city-in-2 clearfix">
+						<div class="select-plane-2" id="select-plane-to-2">
+							<span class="ico-plane"></span>
+							<input name="town-to-2" id="country22" type="text" autocomplete="off" value="">
+						</div>
+						
+						<div class="select-dep-pass-2 clearfix">
+							<div class="select-dep-2">
+								<p><input type="radio" id="radio11" name="rad2" value="Вылет" checked/>
+								<label for="radio11">Вылет</label></p>
+	    						<p><input type="radio" id="radio22" name="rad2" value="Прилет"/>
+	    						<label for="radio22">Прилет</label></p>
+							</div>
+								
+							<div class="select-pass-2">
+								<span class="ico-pass"></span>
+								<select id="passengers-2" name="passengers-2">
+									<option value="">Пассажиры</option>
+									<option value="1">1</option>
+									<option value="2">2</option>	
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="Свыше 25">Свыше 25</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="add-choose-plane clearfix">
+						<div id="addPlane-3" class="add-plane"><span>Добавить перелет</span></div>			
+					</div>
+				</div>
+
+				<!-- НАЧАЛО Третье плечо -->
+				<div id="plus-form3" style="display:none">
+					<div id="deletePlane-3" class="delete-plane-3"><span>Удалить перелет</span></div><br>
+					<div class="input-city-in col-md-6 clearfix" id="input-city-in-3">
+						<div class="select-plane-3" id="select-plane-3">
+							<span class="ico-plane"></span>
+							<input id="country33" name="town-from-3" type="text" placeholder="Выберите город вылета"  autocomplete="off">
+						</div>
+
+						<div class="select-date-time-3 clearfix">
+							<div class="select-date-3">
+								<span class="ico-calendar"></span>
+								<input name="datepicker3" placeholder="Дата" autocomplete="off" type="text" id="datepicker3">
+							</div>
+									
+							<div class="select-time-3 clearfix">
+								<span class="ico-time"></span>
+								<select name="time-3" id="time-3">
+									<option value="" selected="selected">Время</option>
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</select>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 input-city-in-3 clearfix">
+						<div class="select-plane-3" id="select-plane-to-3">
+							<span class="ico-plane"></span>
+							<input id="country44" class="ac_input" name="town-to-3" type="text" placeholder="Выберите город прилета"  autocomplete="off">
+						</div>
+						
+						<div class="select-dep-pass-3 clearfix">
+							<div class="select-dep-3">
+								<p><input type="radio" id="radio33" name="rad3" value="Вылет" checked/>
+								<label for="radio33">Вылет</label></p>
+	    						<p><input type="radio" id="radio44" name="rad3" value="Прилет"/>
+	    						<label for="radio44">Прилет</label></p>
+							</div>
+								
+							<div class="select-pass-3">
+								<span class="ico-pass"></span>
+								<select id="passengers-3" name="passengers-3">
+									<option value="">Пассажиры</option>
+									<option value="1">1</option>
+									<option value="2">2</option>	
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="Свыше 25">Свыше 25</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="add-choose-plane clearfix">
+						<div id="addPlane-4" class="add-plane"><span>Добавить перелет</span></div>			
+					</div>
+				</div>
+
+				<!-- НАЧАЛО Четвертое плечо -->
+				<div id="plus-form4" style="display:none">
+					<div id="deletePlane-4" class="delete-plane-4"><span>Удалить перелет</span></div><br>
+					<div class="input-city-in col-md-6 clearfix" id="input-city-in-4">
+						<div class="select-plane-4" id="select-plane-4">
+							<span class="ico-plane"></span>
+							<input id="country55" class="ac_input" name="town-from-4" type="text" placeholder="Выберите город вылета"  autocomplete="off">
+						</div>
+
+						<div class="select-date-time-4 clearfix">
+							<div class="select-date-4">
+								<span class="ico-calendar"></span>
+								<input name="datepicker4" placeholder="Дата" autocomplete="off" type="text" id="datepicker4">
+							</div>
+									
+							<div class="select-time-4 clearfix">
+								<span class="ico-time"></span>
+								<select name="time-4" id="time-4">
+									<option value="" selected="selected">Время</option>
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</select>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 input-city-in-4 clearfix">
+						<div class="select-plane-4" id="select-plane-to-4">
+							<span class="ico-plane"></span>
+							<input id="country66" class="ac_input" name="town-to-4" type="text" placeholder="Выберите город прилета"  autocomplete="off">
+						</div>
+						
+						<div class="select-dep-pass-4 clearfix">
+							<div class="select-dep-4">
+								<p><input type="radio" id="radio55" name="rad4" value="Вылет" checked/>
+								<label for="radio55">Вылет</label></p>
+	    						<p><input type="radio" id="radio66" name="rad4" value="Прилет"/>
+	    						<label for="radio66">Прилет</label></p>
+							</div>
+								
+							<div class="select-pass-4">
+								<span class="ico-pass"></span>
+								<select id="passengers-4" name="passengers-4">
+									<option value="">Пассажиры</option>
+									<option value="1">1</option>
+									<option value="2">2</option>	
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="Свыше 25">Свыше 25</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="add-choose-plane clearfix" id="add-choose-plane">
+						<div id="addPlane" class="add-plane"><span>Добавить перелет</span></div>
+						<div id="choosePlane" class="choose-plane" ><span>Выберите самолет</span></div>				
+					</div>				
+			</div>
+
+
+			<div class="choose-planes clearfix" id="choose-planes">
+				<p>Выберите самолет:</p>
+
+				<div class="choose-big-pic-planes clearfix" id="choose-big-pic-planes">
+					<div class="group-planes clearfix" id="light-planes">
+						<div class="title-one">Легкие самолеты</div>
+						<img src="img/planes/title-light-planes.jpg">
+						<div id="pointer1"></div>
+					</div>
+
+					<div class="group-planes clearfix" id="middle-planes">
+						<div class="title-one" >Средние самолеты</div>
+						<img src="img/planes/title-middle-planes.jpg">
+						<div id="pointer2"></div>
+					</div>
+
+					<div class="group-planes clearfix" id="busy-planes">
+						<div class="title-one">Тяжелые самолеты</div>
+						<img src="img/planes/title-heavy-planes.jpg">
+						<div id="pointer3"></div>
+					</div>
+
+					<div class="group-planes clearfix" id="avialiners">
+						<div class="title-one">Авиалайнеры</div>
+						<img src="img/planes/title-avialiners.jpg">
+						<div id="pointer4"></div>
+					</div>
+				</div>
+
+				<!-- START Выбор легких самолетов -->
+				<div class="variants-planes clearfix" id="photoes-light-planes">
+
+					<div class="small-pic-planes pass-5 clearfix" >
+						<div class="title-var-planes">
+							<label for="encore13"><input type="radio" id="encore13" name="light-plane"
+							value="Легкий самолет CITATION CJ1">CITATION CJ1</label>
+						</div>
+						<img src="img/planes/light-plane-3.jpg" width="150" height="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Холодное</li>
+							<li><span class="title">Высота салона:</span> 1,45м</li>
+							<li><span class="title">Дальность:</span> 03ч 05м</li>
+							<li><span class="title" >Мест:</span> 5</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-5 clearfix">
+						<div class="title-var-planes">
+							<label for="encore14"><input type="radio" id="encore14" name="light-plane" value="Легкий самолет CITATION CJ1+">CITATION CJ1+</label>
+						</div>
+						<img src="img/planes/light-plane-4.jpg" width="150" height="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Холодное</li>
+							<li><span class="title">Высота салона:</span> 1,45м</li>
+							<li><span class="title">Дальность:</span> 03ч 05м</li>
+							<li><span class="title">Мест:</span> 5</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes clearfix pass-6">
+						<div class="title-var-planes">
+							<label for="encore15"><input type="radio" id="encore15" name="light-plane" value="Легкий самолет LLEARJET 40XR">LEARJET 40XR</label>
+						</div>
+						<img src="img/planes/light-plane-5.jpg" width="150" height="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,50м</li>
+							<li><span class="title">Дальность:</span> 03ч 40м</li>
+							<li><span class="title">Мест:</span> 6</li>
+						</ul>
+					</div>
+					
+					<div class="small-pic-planes pass-6 clearfix">
+						<div class="title-var-planes">
+							<label for="encore16"><input type="radio" id="encore16" name="light-plane"
+							value="Легкий самолет PREMIER I">PREMIER I</label>
+						</div>
+						<img src="img/planes/light-plane-6.jpg" width="150" height="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Холодное</li>
+							<li><span class="title">Высота салона:</span> 1,67м</li>
+							<li><span class="title">Дальность:</span> 03ч 15м</li>
+							<li><span class="title">Мест:</span> 6</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-6 clearfix">
+						<div class="title-var-planes">
+							<label for="encore17"><input type="radio" id="encore17" name="light-plane"
+							value="Легкий самолет HAWKER 400XP">HAWKER 400 XP</label>
+						</div>
+						<img src="img/planes/light-plane-7.jpg" width="150" height="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Холодное</li>
+							<li><span class="title">Высота салона:</span> 1,45м</li>
+							<li><span class="title">Дальность:</span> 03ч 10м</li>
+							<li><span class="title">Мест:</span> 6</li>
+						</ul>
+					</div>
+					
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore11">
+							<input type="radio" id="encore11" name="light-plane" value="CITATION BRAVO">CITATION BRAVO</label>
+						</div>
+						<img src="img/planes/light-plane-1.jpg" width="150" hieght="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Холодное</li>
+							<li><span class="title">Высота салона:</span> 1,45м</li>
+							<li><span class="title">Дальность:</span> 04ч 30м</li>
+							<li><span class="title" >Мест:</span> 7</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore12"><input type="radio" id="encore12" name="light-plane" 
+							value="Легкий самолет CITATION CJ2">CITATION CJ2</label>
+						</div>
+						<img src="img/planes/light-plane-2.jpg" width="150" height="90">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Нет</li>
+							<li><span class="title">Питание:</span> Холодное</li>
+							<li><span class="title">Высота салона:</span> 1,45м</li>
+							<li><span class="title">Дальность:</span> 03ч 20м</li>
+							<li><span class="title">Мест:</span> 7</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END - Выбор легких самолетов -->
+
+				<!-- START Выбор средних самолетов -->
+				<div class="variants-planes clearfix" id="photoes-middle-planes">
+					
+					<div class="small-pic-planes pass-9 clearfix">
+						<div class="title-var-planes">
+							<label for="encore21"><input type="radio" id="encore21" name="middle-plane"
+							value="Средний самолет HAWKER 1000">HAWKER 1000</label>
+						</div>
+						<img src="img/planes/middle-plane-1.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,76м</li>
+							<li><span class="title">Дальность:</span> 06ч 50м</li>
+							<li><span class="title">Мест:</span> 9</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore22"><input type="radio" id="encore22" name="middle-plane"
+							value="Средний самолет LEARJET 60XR">LEARJET 60XR</label>
+						</div>
+						<img src="img/planes/middle-plane-2.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,74м</li>
+							<li><span class="title">Дальность:</span> 05ч 00м</li>
+							<li><span class="title">Мест:</span> 7</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-8 clearfix">
+						<div class="title-var-planes">
+							<label for="encore23"><input type="radio" id="encore23" name="middle-plane"
+							value="Средний самолет CESSNA CITATION VII">CESSNA CITATION VII</label>
+						</div>
+						<img src="img/planes/middle-plane-3.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,73м</li>
+							<li><span class="title">Дальность:</span> 03ч 50м</li>
+							<li><span class="title">Мест:</span> 8</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore24"><input type="radio" id="encore24" name="middle-plane"
+							value="Средний самолет HAWKER 750">HAWKER 750</label>
+						</div>
+						<img src="img/planes/middle-plane-4.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,75м</li>
+							<li><span class="title">Дальность:</span> 04ч 30м</li>
+							<li><span class="title">Мест:</span> 7</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore25"><input type="radio" id="encore25" name="middle-plane"
+							value="Средний самолет HAWKER 800 A">HAWKER 800 A</label>
+						</div>
+						<img src="img/planes/middle-plane-5.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,75м</li>
+							<li><span class="title">Дальность:</span> 05ч 30м</li>
+							<li><span class="title">Мест:</span> 7</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore26"><input type="radio" id="encore26" name="middle-plane"
+							value="Средний самолет CESSNA CITATION XLS+">CESSNA CITATION XLS+</label>
+						</div>
+						<img src="img/planes/middle-plane-6.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,72м</li>
+							<li><span class="title">Дальность:</span> 04ч 00м</li>
+							<li><span class="title">Мест:</span> 7</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-7 clearfix">
+						<div class="title-var-planes">
+							<label for="encore27"><input type="radio" id="encore27" name="middle-plane"
+							value="Средний самолет HAWKER 900XP">HAWKER 900 XP</label>
+						</div>
+						<img src="img/planes/middle-plane-7.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,75м</li>
+							<li><span class="title">Дальность:</span> 05ч 40м</li>
+							<li><span class="title">Мест:</span> 7</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END - Выбор средних самолетов -->
+
+				<!-- START Выбор тяжелых самолетов -->
+				<div class="variants-planes clearfix" id="photoes-busy-planes">
+					
+					<div class="small-pic-planes pass-12 clearfix">
+						<div class="title-var-planes">
+							<label for="encore31"><input type="radio" id="encore31" name="busy-plane"
+							value="Тяжелый самолет CHALLENGER 605">CHALLENGER 605</label>
+						</div>
+						<img src="img/planes/busy-plane-1.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,86м</li>
+							<li><span class="title">Дальность:</span> 08ч 40м</li>
+							<li><span class="title" id="#pass-12">Мест:</span> 12</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-14 clearfix">
+						<div class="title-var-planes">
+							<label for="encore32"><input type="radio" id="encore32" name="busy-plane"
+							value="Тяжелый самолет GLOBAL EXPRESS">GLOBAL EXPRESS</label>
+						</div>
+						<img src="img/planes/busy-plane-2.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,92м</li>
+							<li><span class="title">Дальность:</span> 10ч 10м</li>
+							<li><span class="title" id="#pass-14">Мест:</span> 14</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-14 clearfix">
+						<div class="title-var-planes">
+							<label for="encore33"><input type="radio" id="encore33" name="busy-plane"
+							value="Тяжелый самолет GLOBAL 6000">GLOBAL 6000</label>
+						</div>
+						<img src="img/planes/busy-plane-3.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,91м</li>
+							<li><span class="title">Дальность:</span> 12ч 10м</li>
+							<li><span class="title" id="#pass-14">Мест:</span> 14</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-14 clearfix">
+						<div class="title-var-planes">
+							<label for="encore34"><input type="radio" id="encore34" name="busy-plane"
+							value="Тяжелый самолет GULFSTREAM G450">GULFSTREAM G450</label>
+						</div>
+						<img src="img/planes/busy-plane-4.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,88м</li>
+							<li><span class="title">Дальность:</span> 09ч 20м</li>
+							<li><span class="title" id="#pass-14">Мест:</span> 14</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-14 clearfix">
+						<div class="title-var-planes">
+							<label for="encore35"><input type="radio" id="encore35" name="busy-plane"
+							value="Тяжелый самолет FALCON 900 EX">FALCON 900 EX</label>
+						</div>
+						<img src="img/planes/busy-plane-5.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,88м</li>
+							<li><span class="title">Дальность:</span> 07ч 45м</li>
+							<li><span class="title" id="#pass-14">Мест:</span> 14</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-14 clearfix">
+						<div class="title-var-planes">
+							<label for="encore36"><input type="radio" id="encore36" name="busy-plane"
+							value="Тяжелый самолет FALCON 900 LX">FALCON 900 LX</label>
+						</div>
+						<img src="img/planes/busy-plane-6.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,88м</li>
+							<li><span class="title">Дальность:</span> 07ч 45м</li>
+							<li><span class="title" id="#pass-14">Мест:</span> 14</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-14 clearfix">
+						<div class="title-var-planes">
+							<label for="encore37"><input type="radio" id="encore37" name="busy-plane"
+							value="Тяжелый самолет FALCON 900">FALCON 900</label>
+						</div>
+						<img src="img/planes/busy-plane-7.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,88м</li>
+							<li><span class="title">Дальность:</span> 07ч 45м</li>
+							<li><span class="title" id="#pass-14">Мест:</span> 14</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END - Выбор тяжелых самолетов -->
+
+				<!-- START Выбор авиалайнеров -->
+				<div class="variants-planes clearfix" id="photoes-avialiners">
+					<div class="small-pic-planes pass-20 clearfix" >
+						<div class="title-var-planes">
+							<label for="encore41"><input type="radio" id="encore41" name="avialiners"
+							value="Авиалайнер CAIRBUS 318 ELITE">AIRBUS 318 ELITE</label>
+						</div>
+						<img src="img/planes/avialiners-1.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 2,25м</li>
+							<li><span class="title">Дальность:</span> 05ч 50м</li>
+							<li><span class="title" id="#pass-20">Мест:</span> 20</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-19 clearfix">
+						<div class="title-var-planes">
+							<label for="encore42"><input type="radio" id="encore42" name="avialiners"
+							value="Авиалайнер EMBRAER LINEAGE 1000">EMBRAER LINEAGE 1000</label>
+						</div>
+						<img src="img/planes/avialiners-2.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 1,97м</li>
+							<li><span class="title">Дальность:</span> 09ч 00м</li>
+							<li><span class="title"  id="#pass-19">Мест:</span> 19</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-48 clearfix">
+						<div class="title-var-planes">
+							<label for="encore43"><input type="radio" id="encore43" name="avialiners"
+							value="Авиалайнер AIRBUS 319 CORPORATE JET">AIRBUS 319 CORPORATE JET</label>
+						</div>
+						<img src="img/planes/avialiners-3.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 2,25м</li>
+							<li><span class="title">Дальность:</span> 08ч 00м</li>
+							<li><span class="title" id="#pass-48">Мест:</span> 48</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-46 clearfix">
+						<div class="title-var-planes">
+							<label for="encore44"><input type="radio" id="encore43" name="avialiners"
+							value="Авиалайнер BOEING BUSINESS JET">BOEING BUSINESS JET</label>
+						</div>
+						<img src="img/planes/avialiners-4.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 2,16м</li>
+							<li><span class="title">Дальность:</span> 11ч 40м</li>
+							<li><span class="title" id="#pass-46">Мест:</span> 46</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-48 clearfix">
+						<div class="title-var-planes">
+							<label for="encore45"><input type="radio" id="encore45" name="avialiners"
+							value="Авиалайнер AIRBUS 320 CORPORATE JET">AIRBUS 320 CORPORATE JET</label>
+						</div>
+						<img src="img/planes/avialiners-5.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 2,25м</li>
+							<li><span class="title">Дальность:</span> 07ч 35м</li>
+							<li><span class="title" id="#pass-48">Мест:</span> 48</li>
+						</ul>
+					</div>
+
+					<div class="small-pic-planes pass-30 clearfix">
+						<div class="title-var-planes">
+							<label for="encore46"><input type="radio" id="encore46" name="avialiners"
+							value="Авиалайнер FOKKER 1000 VIP">FOKKER 100 VIP</label>
+						</div>
+						<img src="img/planes/avialiners-6.jpg">
+						<ul class="description">
+							<li><span class="title">Стюардесса:</span> Да</li>
+							<li><span class="title">Питание:</span> Горячее</li>
+							<li><span class="title">Высота салона:</span> 2,01м</li>
+							<li><span class="title">Дальность:</span> 03ч 40м</li>
+							<li><span class="title" id="#pass-30">Мест:</span> 30</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END - Выбор авиалайнеров -->
+
+			</div>
+			
+			<div class="col-md-12" id="contacts-user" style="display:none">
+				<p>Контактная информация:</p>
+					<div class="contacts-text" id="contacts-data">
+						<p><input name="fio" id="fio" type="text" placeholder="ФИО" autocomplete="off" required></p>
+						<p><input name="tel" id="fio" type="tel" pattern="(\+?\d[- .]*){7,13}" title="Телефон" placeholder="Телефон"  autocomplete="off"></p>
+						<p><input name="email" id="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="E-mail" autocomplete="off" ></p>
+					</div>
+			</div>
+
+			<div class="col-md-12 comment" id="comment">
+				<p>Пожелания:</p>
+					<div class="for-text">
+						<textarea name="wishes" placeholder="предпочтения в обслуживании, питании,перелет с животными..."></textarea>
+					</div>
+					<div class="for-click">
+						<input type="submit" value="Отправить запрос">
+					</div>
+			</div>
+
+		</div>
+	</form>
+
+<div class="row visible-md-block visible-lg-block" id="orderSteps">
+	<div class="col-sm-offset-2 col-sm-2 step active stepOne">
+		<div class="circle">1</div>
+		<h3>ШАГ 1</h3>
+		<hr>
+		<div class="description">Аэропорты и пассажиры</div>
+	</div>
+	<div class="col-sm-1">
+		<img class="arrow" src="img/arrow.png" alt="" width="34px" height="11px">
+		<!--strong>&#62;&#62;&#62;</strong-->
+	</div>
+	<div class="col-sm-2 step active tepTwo">
+		<div class="circle">2</div>
+		<h3>ШАГ 2</h3>
+		<hr>
+		<div class="description">Дата и время вылета</div>
+	</div>
+	<div class="col-sm-1">
+	<img class="arrow" src="img/arrow.png" alt="" width="34px" height="11px"></div>
+	<div class="col-sm-2 step active stepThree">
+		<div class="circle">3</div>
+		<h3>ШАГ 3</h3>
+		<hr>
+		<div class="description">Воздушные суда</div>
+	</div>
+</div>
+</div>
+</section>
+<!-- // END ORDER BLOCK // -->		<!-- // ABOUT // -->
+<section id="about" class="page container-fluid">
+	<div class="body">
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-1">
+				<img src="img/plane.png" width="130px" height="auto" style="margin-top:50px;">
+			</div>
+			<div class="col-sm-6 col-sm-offset-1">
+				<h1>О КОМПАНИИ</h1>
+				<p>Sky Alliance - компания, предоставляющая полный спектр услуг по организации деловых, частных, корпоративных перелетов по всему миру на самолетах бизнес авиации.</p>
+				<p>Мы беспечим выполнение рейса на любом самолете в любую точку мира в любое удобное для вас время. Наши операторы примут ваш запрос в любое время суток, оперативно организуют рейс исходя из ваших пожеланий. </p>
+				<p>Мы работаем, чтобы наши клиенты всегда добирались до необходимого места точно по расписанию, полеты проходили без осложнений, а комфорт полета соответствовал самым взыскательным требованиям пассажиров.</p>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section id="team" class="page container-fluid">
+	<header>
+		<h1>УСЛУГИ</h1>
+		<hr>
+	</header>
+
+	<div class="body">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="photo">
+					<img src="img/Feature-1.jpg" alt="">
+				</div>
+				<div class="about">
+					<h2>Большой парк самолетов</h2>
+					<p>Sky Alliance - компания, предоставляющая полный спектр услуг по организации деловых, частных, корпоративных перелетов по всему миру на самолетах бизнес авиации. Один из основных видов нашей деятельности — организация VIP-рейсов на самолетах бизнес класса.</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="photo">
+					<img src="img/Feature-2.jpg" alt="">
+				</div>
+				<div class="about">
+					<h2>Круглосуточное обслуживание</h2>
+					<p>Наши операторы примут ваш запрос в любое время суток и оперативно организуют рейс исходя из ваших пожеланий. Просто позвоните или заполните форму заказа самолета и наш менеджер предложит оптимальный маршрут и борт для выполнения вашего полета.</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="photo">
+					<img src="img/Feature-3.jpg" alt="">
+				</div>
+				<div class="about">
+					<h2>Комфорт полетов</h2>
+					<p>Бизнес чартер позволяет насладиться роскошной обстановкой удобного, функционального салона, поработать или отдохнуть перед важной встречей. Все ваши пожелания к обслуживанию на борту будут учтены: в том числе, требования к меню, техническому оснащению салона и квалификации персонала.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- // END FEATURES // -->		<section id="partners" class="page">
+    <header>
+        <h1>Партнёры</h1>
+    </header>
+    <div class="logos">
+        <ul>
+            <li>
+            	<a target="_blank" href="#" title="">
+            		<img src="img/partner1.jpg" alt="">
+            	</a>
+            </li>
+            <li>
+            	<a target="_blank" href="#" title="">
+            		<img src="img/partner2.jpg" alt="">
+            	</a>
+            </li>
+            <li><img src="img/partner3.jpg" alt=""></li>
+            <li><img src="img/partner4.jpg" alt=""></li>
+        </ul>
+    </div>
+</section>		
+
+<section id="contact" class="page container-fluid">
+	<header>
+		<h1>КОНТАКТЫ</h1>
+		<hr>
+		<h3>Т: +7 (925) 092-24-28</h3>
+		<h3>Ф: +7 (499) 257-19-96</h3>
+		<h3><a href="mailto:zakaz@skyalliance.ru">zakaz@skyalliance.ru</a></h3>
+		<h3>125124, Москва, 1-я ул. Ямского поля, 15/2</h3>
+	</header>
+</section>		
+<section id="last-section" class="page fullwidth container-fluid">
+	<header>
+		<div class="learn-more">
+			© SKY ALLIANCE 2015<br>
+			Заказ и аренда самолетов деловой авиации, чартерные рейсы и VIP-чартер.
+		</div>
+	</header>
+</section>
+
+
+
+<script async src="js/analytics.js"></script>
+<script type="text/javascript">
+    $('.nav a[href^="#"]').click( function(){
+        var scroll_el = $(this).attr('href');
+
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top -40 }, 500);
+
+        }
+
+        return false;
+    });
+
+
+    $('.to-order a[href^="#"]').click( function(){
+        var scroll_el = $(this).attr('href');
+        
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top -40 }, 500);
+        }
+        return false;
+    });
+
+</script>
+
+<script src="js/script.js"></script>
+<script type="text/javascript">var i18n = {loading: 'Загрузка', lang: 'ru'}</script>
+
+
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+<div style="display: none; width: 0px; height: 0px; overflow: hidden;">
+	<img src="img/ru.svg">
+	<img src="img/gb.svg">
+	<img src="img/select2.png">
+	<img src="img/subcribe-background-new.jpg">
+</div>
+</body>
+</html>

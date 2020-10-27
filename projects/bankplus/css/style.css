@@ -1,0 +1,500 @@
+
+body {
+  
+  min-width: 90%;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: #000;
+}
+
+
+
+h1 {font-size: 55px; font-weight: lighter;}
+h2 {font-size: 28px; font-weight: lighter;}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #324375;
+  border-bottom: 1px dashed;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4719;
+  border-bottom: 1px dashed;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.active {
+  color:#000;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.red-link {
+  color: #ff4719;
+  border-bottom: 1px dashed;
+}
+
+.btn-orange {
+  background-color: #ff4719;
+  text-decoration: none;
+  color: #fff;
+  border:none;
+  padding: 15px 55px;
+}
+
+.btn-orange:hover, .btn-orange:visited, .btn-orange:active {
+  text-decoration: none;
+  color: #fff;
+  border:none;
+}
+
+
+
+/* HEADER style */
+
+.header-top-block {
+  background-color: #fff;
+  border-bottom: 1px solid grey;
+}
+
+.top-header {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.logo-header {
+  margin-bottom:15px;
+}
+.top-menu {
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.top-menu ul {
+  list-style: none;
+}
+
+.top-menu ul li{
+  display: inline-block;
+  padding-right:15px;
+}
+
+.info-time-block {
+  margin-top:22px; 
+  margin-bottom:10px; 
+}
+
+.info-time-block a,
+.info-tel-block a {
+  font-size: 15px;
+}
+
+.info-time-block p{
+  font-size: 14px;
+  text-align: center;
+}
+
+.info-tel-block {
+  margin-bottom:10px; 
+  text-align: center;
+  margin-top:14px;
+}
+
+.info-tel-block span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (max-width: 1199px) {
+    .info-tel-block span {
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+
+/* UNDER HEADER STYLE */
+.header-bottom-block {
+  background-color: #203250;
+  background-image: url("../img/first-win-backgr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.top-account {
+  margin-bottom: 50px;
+}
+
+.top-account .h2-title h2 {
+  padding-bottom: 55px;
+  position: relative;
+  line-height: 45px;
+}
+
+.open-account-block {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.top-account .account-block .ico-underline:before {
+  position: absolute;
+  content: url("../img/icon_underline.png");
+  width: 123px;
+  height: 8px;
+  top: 15px;
+}
+
+.open-account-block .btn-open-account {
+  margin-right: 10px;
+  padding: 15px 60px;
+  color: #fff;
+  font-size: 25px;
+  background-color: #ff5b19;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.open-account-block .get-account {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media (max-width: 971px) {
+    .open-account-block .get-account {
+      display: block;
+      width: 260px;
+      font-size: 16px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .open-account-block .btn-open-account {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+}
+
+.top-features{
+  background-color: #253456;
+  color:#fff;
+  padding: 10px 15px 20px;
+}
+
+.features-block {
+  margin: 0 auto;
+  color:#fff;
+  vertical-align: middle;
+}
+
+/*.features-block .feature-block {
+  float: left;
+  display: inline-block;
+  text-align: left;
+  margin-right: 80px;
+}
+
+.features-block .feature-block:last-child{
+  padding-right: 0;
+  float: right;
+} */
+
+.features-block .feature-block {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.features-block .feature-block .icon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 44px;
+  height: 44px; 
+} 
+
+.icon-person{
+  background-image: url("../img/icon-person.png"); 
+  
+}
+
+.icon-star{
+  background-image: url("../img/icon-star.png"); 
+}
+
+.icon-clock{
+  background-image: url("../img/icon-clock.png"); 
+}
+
+.icon-bank{
+  background-image: url("../img/icon-bank.png"); 
+}
+
+.feature-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.feature-text b {
+  font-size: 18px;
+}
+
+
+/* ACCOUNT BLOCK STYLE */
+
+.account-info-block {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.account-info-block h1 {
+  font-weight: lighter;
+  color: #324375; 
+}
+
+.account-info-block h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.account-info-block:first-child .col-md-3:last-child {
+  border: 2px solid #0054a6;
+  box-shadow: 0 8px 25px rgba(242, 60, 0, .2);
+  padding-bottom: 10px;
+}
+
+@media (max-width: 971px) {
+  .account-info-block h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .account-info-block p {
+    font-size: 18px;
+  }
+}
+
+.rate-start-account {
+  margin-bottom: 20px;
+}
+
+.orange_mark {
+  background-color: #ff5b19;
+  padding: 5px 8px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.rate-start-account .title {
+  font-size: 20px;
+}
+
+.rate-start-account .subtitle {
+  font-size: 16px;
+}
+
+.rate-start-account .mark-list {
+  font-size: 16px;
+  line-height: 26px;
+  
+}
+
+.rate-start-account .mark-list li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.rate-start-account .mark-list li:before {
+  position: absolute;
+  content: "—";
+  left:25px;
+  color: #ff5b19;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media (max-width: 971px) {
+  .rate-start-account .orange_mark:before {
+
+  }
+}
+
+.open-account {
+  margin-bottom: 40px;
+}
+
+/* OPEN ACCOUNT FORM STYLE */
+
+.open-account-form {
+  padding: 40px 10px 0;
+  background-image: linear-gradient(65deg, #2b5778, #2980b8);
+}
+
+.open-account-form .title{
+  margin-bottom: 30px;
+  font-weight: lighter;
+  color:#fff;
+}
+
+.open-account-form .features-block {
+  padding-bottom: 60px;
+}
+
+.account-form-block {
+  padding: 40px 45px; 
+  border-radius: 5px;
+  box-shadow: 0px 10px 50px rgba(1,1,1,.25);
+  background-color: #fff;
+  margin-bottom: 60px;
+  color: #000;
+}
+
+.account-form-block .title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.account-form-block input[type="text"] {
+  width: 100%;
+  height: 50px;
+  background-color: #ebebeb;
+  padding: 10px 20px;
+  color: #000;
+  outline: 0;
+  border: 0;
+  margin-right: 15px;
+  margin-bottom: 39px;
+}
+
+.account-form-block input[type="text"]:focus {
+  border: 2px solid #ff4719;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 2px;
+  outline: 0;
+}
+
+/*.account-form-block .btn-comment {
+  display: inline;
+  width: 50%;
+}
+
+.account-form-block .btn-comment input[type="submit"] {
+  width: 210px;
+  height: 50px;
+  margin-right: 10px;
+}*/
+
+/*.account-form-block input[name="cTaxdoc"],
+.account-form-block  input[name="cCoName"]
+.account-form-block  input[name="cSubmit"] {
+  margin-bottom: 10px;
+} 
+*/
+
+.account-form-block .btn-comment .note {
+  font-size: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 116px;
+  text-align: left;
+}
+
+.btn-comment .btn-orange {
+  padding: 12px 45px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #ff5b19;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: top;
+  -moz-border-radius: 5px;
+}
+
+@media (max-width: 971px) {
+  .accountForm input[type="text"] {
+      width: 100%;
+    }
+
+    .btn-comment .note {
+      display: inline-block;
+      width: 100% !important;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .btn-comment .btn-orange {
+      display: inline-block;
+      margin: 0 auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .btn-comment .note {
+      display: inline-block;
+      width: 100% !important;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .btn-comment .btn-orange {
+      display: inline-block;
+      margin: 0 auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+
+
+
+/*   FOOTER   STYLE  */
+.footer-block {
+  border-top: 1px solid #fff;
+  padding: 15px;
+  color: #fff;
+  
+}
+
+.footer-block .footer-copy {
+  float: left;
+  width: 30%;
+}
+
+.footer-block .footer-logo {
+  float: right;
+  width: 20%;
+  margin-right: 10px;
+}
+
+.footer-block .footer-text {
+  display: inline-block;vertical-align: middle;
+}

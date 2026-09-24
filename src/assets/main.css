@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@source "../**/*.{vue,js,ts,jsx,tsx}";
+
+@theme {
+  /* Перенос кастомных цветов */
+  --color-background: #282C33;
+  --color-primary: #C778DD;
+  --color-gray-text: #ABB2BF;
+  --color-white-text: #FFFFFF;
+  --color-border-gray: #4C566A;
+  --color-card-bg: #282C33;
+
+  /* Перенос шрифта mono */
+  --font-mono: "Fira Code", monospace;
+}
+
+
+
+body {
+	background-color: #282C33;
+	color: #ABB2BF;
+	font-family: 'Fira Code', monospace;
+	overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #282C33;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4C566A;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #C778DD;
+}
+
+/* Border box outline styles common in Figma spec */
+.figma-border {
+	border: 1px solid #ABB2BF;
+}
+
+.figma-border-primary {
+	border: 1px solid #C778DD;
+}
+
+/* Grid Dots Pattern */
+.dots-pattern {
+	background-image: radial-gradient(#ABB2BF 1.5px, transparent 1.5px);
+	background-size: 16px 16px;
+}
+

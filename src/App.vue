@@ -178,8 +178,6 @@ import Projects from './components/ProjectsList.vue'
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <!-- Stylized Geometric Developer Character -->
-              <!-- Head / Hair -->
               <path
                 d="M100 80 Q 150 40 200 80 L 210 130 L 90 130 Z"
                 fill="#282C33"

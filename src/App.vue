@@ -161,9 +161,7 @@ import Projects from './components/ProjectsList.vue'
           </div>
         </div>
 
-        <!-- Right Visual Graphic -->
         <div class="md:col-span-5 relative flex flex-col items-center">
-          <!-- Background Accent Elements -->
           <div class="absolute top-12 left-2 w-20 h-20 text-primary opacity-80">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M10,30 L30,10 L90,10 L90,70 L70,90 L10,90 Z" />

@@ -196,7 +196,6 @@ import Projects from './components/ProjectsList.vue'
                 stroke="#ABB2BF"
                 stroke-width="2"
               />
-              <!-- Inner detail lines -->
               <path
                 d="M150 140 L 150 320"
                 stroke="#C778DD"

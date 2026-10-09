@@ -171,7 +171,6 @@ import Projects from './components/ProjectsList.vue'
           </div>
           <div class="absolute bottom-16 right-4 w-16 h-16 dots-pattern opacity-60"></div>
 
-          <!-- Central Character Outline SVG Graphics -->
           <div
             class="relative z-10 w-full max-w-[320px] aspect-[4/5] flex items-center justify-center"
           >

@@ -43,6 +43,7 @@ defineProps<{
       >
       <a
         v-if="project.link"
+        target="_blank"
         :href="project.link"
         class="border border-primary px-4 py-1.5 text-xs text-whiteText hover:bg-primary/10 transition-colors"
         >Сайт &lt;= &gt;</a

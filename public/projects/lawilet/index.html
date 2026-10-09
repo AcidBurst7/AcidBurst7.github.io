@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lawliet — Legal Consultancy</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- HEADER / NAVBAR -->
+	<header class="header">
+		<div class="header__container container">
+			<a href="#" class="logo">
+				<span class="logo__badge">L</span>
+				<span class="logo__text">Lawliet</span>
+			</a>
+
+			<nav class="nav" id="main-nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+					<li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#terms" class="nav__link">Terms</a></li>
+				</ul>
+			</nav>
+
+			<div class="header__actions">
+				<!-- Кнопка вызова поиска -->
+				<button class="header__search-btn" id="search-btn" aria-label="Toggle Search">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<circle cx="11" cy="11" r="8"></circle>
+						<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+					</svg>
+				</button>
+
+				<!-- Выпадающая форма поиска -->
+				<form class="search-form" id="search-form" action="#" method="get">
+					<input type="search" name="q" class="search-form__input" placeholder="Search here..." aria-label="Search" autocomplete="off">
+					<button type="submit" class="search-form__submit" aria-label="Submit Search">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="11" cy="11" r="8"></circle>
+							<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+						</svg>
+					</button>
+					<button type="button" class="search-form__close" id="search-close" aria-label="Close Search">
+						&times;
+					</button>
+				</form>
+
+				<!-- Бургер-меню -->
+				<button class="header__burger" id="burger-btn" aria-label="Toggle Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- HERO SECTION -->
+		<section class="hero">
+			<div class="hero__container container">
+				<div class="hero__content">
+					<div class="hero__badge">
+						<span class="hero__badge-tag">New</span>
+						<span class="hero__badge-text">Stay connected to the upcoming & Recent jobs</span>
+					</div>
+
+					<h1 class="hero__title">Your Solution Legal Consultancy</h1>
+
+					<p class="hero__description">
+						We are here to help you take care of your legality with the best service especially for you.
+					</p>
+
+					<a href="#contact" class="btn btn--primary hero__btn">Get started</a>
+
+					<div class="hero__trusted">
+						<p class="hero__trusted-text">Trusted by 10+ companies in indonesia</p>
+						<div class="hero__partners">
+							<span class="partner-logo partner-logo--airbnb">
+								<img src="img/airbnb_logo.svg" width="90" height="28" alt="Airbnb">
+							</span>
+							<span class="partner-logo partner-logo--hubspot">
+								<img src="img/hubspot_logo.svg" width="84" height="24" alt="HubSpot">
+							</span>
+							<span class="partner-logo partner-logo--microsoft">
+								<img src="img/microsoft_logo.svg" width="122" height="26" alt="Microsoft">
+							</span>
+							<span class="partner-logo partner-logo--google">
+								<img src="img/google_logo.svg" width="84" height="28" alt="Google">
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hero__visual">
+					<div class="hero__circle hero__circle--outer"></div>
+					<div class="hero__circle hero__circle--inner"></div>
+					<div class="hero__image-wrapper">
+						<img src="img/creating-a-brand-2mMhaoBGjCs-unsplash-removebg-preview.png" class="hero__img">
+						<div class="hero__card">
+							<h3 class="hero__card-name">Tiara Andini</h3>
+							<p class="hero__card-role">- Lawyer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- WHY CHOOSE US / FEATURES SECTION -->
+		<section class="why-us" id="about">
+			<div class="why-us__container container">
+				<div class="why-us__header">
+					<h2 class="why-us__title">Why do we help with legalization?</h2>
+					<p class="why-us__text">
+						We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.
+					</p>
+				</div>
+
+				<div class="why-us__grid">
+					<article class="feature-card">
+						<div class="feature-card__icon feature-card__icon--blue">
+							<img src="img/feature_environmental_law.svg" width="37" height="37" alt="Environmental Law Icon">
+						</div>
+						<h3 class="feature-card__title">Environmental Law</h3>
+						<p class="feature-card__desc">Environmental law aims to protect the environment and create rules for business actions.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon feature-card__icon--teal">
+							<img src="img/feature_corporate_commercial.svg" width="37" height="37" alt="Corporate and Commercial Icon">
+						</div>
+						<h3 class="feature-card__title">Corporate and Commercial</h3>
+						<p class="feature-card__desc">We provide legal services for all stages of business for companies of all sizes and sectors.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon feature-card__icon--cyan">
+							<img src="img/feature_information_technology.svg" width="37" height="37" alt="Information and Technology Icon">
+						</div>
+						<h3 class="feature-card__title">Information and Technology</h3>
+						<p class="feature-card__desc">IT law is constantly evolving as technology advances and new issues emerge.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon feature-card__icon--dark">
+							<img src="img/feature_other_services.svg" width="37" height="37" alt="Other Services">
+						</div>
+						<h3 class="feature-card__title">Other Services</h3>
+						<p class="feature-card__desc">In addition, we also offer comprehensive legal advising for complex corporate affairs.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ACHIEVEMENTS / COUNTS SECTION -->
+		<section class="achievements">
+			<div class="achievements__bg-pattern"></div>
+			<div class="achievements__container container">
+				<div class="achievements__header">
+					<h2 class="achievements__title">Some count that matters</h2>
+					<p class="achievements__subtitle">Our achievement in the journey depicted in numbers</p>
+				</div>
+
+				<div class="achievements__stats">
+					<div class="stat-item">
+						<span class="stat-item__number">30</span>
+						<span class="stat-item__label">Clients</span>
+					</div>
+					<div class="stat-item__divider"></div>
+					<div class="stat-item">
+						<span class="stat-item__number">300+</span>
+						<span class="stat-item__label">Taken business legalities</span>
+					</div>
+					<div class="stat-item__divider"></div>
+					<div class="stat-item">
+						<span class="stat-item__number">8</span>
+						<span class="stat-item__label">Years of Journey</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TESTIMONIALS SECTION -->
+		<section class="testimonials" id="testimonials">
+			<div class="testimonials__container container">
+				<h2 class="testimonials__title">Clients Testimonial</h2>
+
+				<div class="testimonials__grid">
+					<article class="testimonial-card">
+						<div class="testimonial-card__body">
+							<h3 class="testimonial-card__heading">Incredible Experience</h3>
+							<p class="testimonial-card__text">
+								We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements.
+							</p>
+						</div>
+						<div class="testimonial-card__author">
+							<div class="testimonial-card__avatar">
+								<img src="img/photo.png" width="56" height="56" alt="Anya Tailor Joy">
+							</div>
+							<div class="testimonial-card__info">
+								<h4 class="testimonial-card__name">Anya Tailor Joy</h4>
+								<p class="testimonial-card__role">CEO, SF Industries</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="testimonial-card">
+						<div class="testimonial-card__body">
+							<h3 class="testimonial-card__heading">Dependable, Responsive, Professional Partner</h3>
+							<p class="testimonial-card__text">
+								Firms App has collaborated with Lawliet team for several projects such as website development and Custom Software Systems development. The organization has been pleasant to work with.
+							</p>
+						</div>
+						<div class="testimonial-card__author">
+							<div class="testimonial-card__avatar">
+								<img src="img/photo.png" width="56" height="56" alt="Sri Alam">
+							</div>
+							<div class="testimonial-card__info">
+								<h4 class="testimonial-card__name">Sri Alam</h4>
+								<p class="testimonial-card__role">CEO, Membagongkan GROUP</p>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="testimonials__dots">
+					<span class="dot dot--active"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA SECTION -->
+		<section class="cta" id="contact">
+			<div class="cta__container container">
+				<div class="cta__content">
+					<h2 class="cta__title">Complex Questions?</h2>
+					<p class="cta__desc">
+						Request for a personalized budget for your legal problem. We will send you a couple options in 24 hours. You can have free consult, if a our first customer.
+					</p>
+					<a href="tel:+123456789" class="btn btn--primary cta__btn">
+						<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.12.45 2.33.69 3.58.69a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.24 2.46.69 3.57a1 1 0 01-.27 1.11l-2.2 2.2z" />
+						</svg>
+						Call now
+					</a>
+				</div>
+
+				<div class="cta__visual">
+					<img src="img/consultant-photo.jpg" width="330" height="295" alt="Consultant on call" class="cta__img">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__main">
+				<div class="footer__brand">
+					<a href="#" class="logo logo--light">
+						<span class="logo__badge logo__badge--white">L</span>
+						<span class="logo__text logo__text--white">Lawliet</span>
+					</a>
+				</div>
+
+				<div class="footer__links">
+					<div class="footer__col">
+						<h4 class="footer__col-title">Product</h4>
+						<ul class="footer__list">
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Tutorials</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Releases</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__col">
+						<h4 class="footer__col-title">Company</h4>
+						<ul class="footer__list">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Partners</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__col">
+						<h4 class="footer__col-title">Support</h4>
+						<ul class="footer__list">
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#" id="terms">Terms of service</a></li>
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Status</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__copy">&copy; 2021 Lawliet. All rights reserved</p>
+				<div class="footer__socials">
+					<a href="#" aria-label="Instagram" class="social-icon">
+						<img src="img/instagram-icon.svg" width="20" height="20" alt="Instagram">
+					</a>
+					<a href="#" aria-label="Dribbble" class="social-icon">
+						<img src="img/dribbl-icon.svg" width="20" height="20" alt="Dribbble">
+					</a>
+					<a href="#" aria-label="Twitter" class="social-icon">
+						<img src="img/twitter-icon.svg" width="20" height="20" alt="Twitter">
+					</a>
+					<a href="#" aria-label="YouTube" class="social-icon">
+						<img src="img/youtube-icon.svg" width="20" height="20" alt="YouTube">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Projects from './components/Projects.vue'
+import Projects from './components/ProjectsList.vue'
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import Projects from './components/Projects.vue'
         </svg>
       </a>
       <a
-        href="https://hh.ru/resume/63b5ecfeff10f5080c0039ed1f76697161504f"
+        href="https://hh.ru/resume/36bac50cff1126d3cf0039ed1f4739764f4a72"
         target="_blank"
         rel="noopener noreferrer"
         class="text-grayText hover:text-primary transition-colors p-1"

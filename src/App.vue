@@ -190,7 +190,6 @@ import Projects from './components/ProjectsList.vue'
                 stroke-width="3"
                 stroke-linecap="round"
               />
-              <!-- Hood / Coat -->
               <path
                 d="M70 320 L 90 140 L 210 140 L 230 320 Z"
                 fill="#282C33"

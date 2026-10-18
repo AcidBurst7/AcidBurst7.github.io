@@ -3,6 +3,17 @@ import type { Project } from '../types/project'
 export const projects: Project[] = [
   {
     category: 'development',
+    title: 'Max Messenger',
+    description:
+      'Простой веб-клиент для общения через мессенджер Max. Есть ввод данных от ЛК GreenAPI, добавление телефона для диалога и отправка сообщения.',
+    image: '/images/max-dialog.jpg',
+    tags: ['JavaScript', 'Typescript'],
+    is_nda: false,
+    repository_link: 'https://github.com/AcidBurst7/green-api-chat',
+    link: 'https://acidburst7.github.io/green-api-chat/',
+  },
+  {
+    category: 'development',
     title: 'DailyHub',
     description:
       'Мой личный проект «DailyHub» - веб-приложение для управления задачами и личной продуктивностью. <br> * Доступ к тестовому стенду можно запросить удобным для вас способом из раздела "Контакты"',
